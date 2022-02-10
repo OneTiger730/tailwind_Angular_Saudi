@@ -1,0 +1,13 @@
+<div
+  class="left"
+  mwlResizable
+  [enableGhostResize]="true"
+  [ngStyle]="style"
+  (resizeEnd)="onResizeEnd($event)"
+>
+  <div
+    class="resize-handle-right"
+    mwlResizeHandle
+    [resizeEdges]="{ right: true }"
+  ></div>
+</div>

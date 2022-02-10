@@ -1,0 +1,13 @@
+<div
+  class="rectangle"
+  mwlResizable
+  [enableGhostResize]="true"
+  [ngStyle]="style"
+  (resizeEnd)="onResizeEnd($event)"
+>
+  <div
+    class="resize-handle-top"
+    mwlResizeHandle
+    [resizeEdges]="{ top: true }"
+  ></div>
+</div>
